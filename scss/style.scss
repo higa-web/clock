@@ -1,0 +1,74 @@
+body {
+    font-family:"VT323", monospace;
+    color: #ffffff;
+    font-size: 70px;
+    background-image: url(../images/sky.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-color: rgb(158, 89, 228);
+}
+
+.year {
+    position: absolute;
+    top: 20px;
+    left: 55px;
+}
+.month {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
+.day {
+    position: absolute;
+    top: 0;
+    left: 400px;
+}
+.day-of-week {
+    position: absolute;
+    top: 30px;
+    left: 540px;
+}
+
+.main {
+    position: absolute;
+    top: 125px;
+    left: 250px;
+    display: flex;
+    background-color: rgba($color: #ffffff, $alpha: .2);
+    border-radius: 10px;
+    width: 390px;
+    .time {
+        font-size: 150px;
+    }
+    .second {
+        font-size: 75px;
+        position: absolute;
+        top: 60px;
+        left: 320px;
+    }
+}
+
+.big-image {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+}
+.small-image {
+    position: absolute;
+    top: 280px;
+    left: 150px;
+}
+
+.foo {
+    animation: fluffy1 3s ease infinite;
+  }
+   
+  @keyframes fluffy1 {
+    0% { transform:translateY(0) }
+    5% { transform:translateY(0) }
+    10% { transform:translateY(0) }
+    20% { transform:translateY(-15px) }
+    25% { transform:translateY(0) }
+    30% { transform:translateY(-15px) }
+    50% { transform:translateY(0) }
+    100% { transform:translateY(0) }
+  }
